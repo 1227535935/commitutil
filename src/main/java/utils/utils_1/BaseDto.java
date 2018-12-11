@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * HashMap对象的一个扩展.
  *
- * @author zhangxd
+ * @author
  */
 public class BaseDto extends HashMap<String, Object> implements Dto {
 

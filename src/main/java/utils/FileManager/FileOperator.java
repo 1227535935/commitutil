@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * 文件处理器.
  *
- * @author zhangxd
+ * @author
  */
 public interface FileOperator {
 
