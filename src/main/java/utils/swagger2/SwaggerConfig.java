@@ -1,11 +1,11 @@
 package utils.swagger2;
 
-import com.winway.btc.common.vo.JsonResult;
+//import com.winway.btc.common.vo.JsonResult;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.web.bind.annotation.RequestMethod;
+//import org.springframework.web.bind.annotation.RequestMethod;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -36,15 +36,15 @@ public class SwaggerConfig {
 	@Bean
     public Docket api() {
 		List<ResponseMessage> responseMessageList = new ArrayList<>();
-	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_SUCCESS).message("请求成功").build());
-	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_FAIL).message("请求失败").build());
-	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_NO_LOGIN).message("未登录").build());
+//	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_SUCCESS).message("请求成功").build());
+//	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_FAIL).message("请求失败").build());
+//	    responseMessageList.add(new ResponseMessageBuilder().code(JsonResult.STATUS_NO_LOGIN).message("未登录").build());
 	    
         return new Docket(DocumentationType.SWAGGER_2)
-        		.globalResponseMessage(RequestMethod.GET, responseMessageList)
-                .globalResponseMessage(RequestMethod.POST, responseMessageList)
-                .globalResponseMessage(RequestMethod.PUT, responseMessageList)
-                .globalResponseMessage(RequestMethod.DELETE, responseMessageList)
+//        		.globalResponseMessage(RequestMethod.GET, responseMessageList)
+//                .globalResponseMessage(RequestMethod.POST, responseMessageList)
+//                .globalResponseMessage(RequestMethod.PUT, responseMessageList)
+//                .globalResponseMessage(RequestMethod.DELETE, responseMessageList)
                 .apiInfo(apiInfo())
                 .enable(enableSwagger)
                 .select()
